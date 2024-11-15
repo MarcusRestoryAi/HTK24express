@@ -8,7 +8,19 @@ document.getElementById("btnFetch").addEventListener("click", async () => {
   //Skapa en HTML table komponent
   let table = document.createElement("table")
 
-  console.log(data)
+  //---------------------
+  // Detta har lagts till för att skapa Header rad i table
+  //---------------------
+  //Skapa headers för översta raden
+  let headerRow = document.createElement("tr")
+  //Skapa en ForIn loop för det första objektet i listan, för att hämta attribut-namn för header
+  for (let attr in data[0]) {
+    let tableHead = document.createElement("th")
+    tableHead.innerText = attr
+    headerRow.appendChild(tableHead)
+  }
+  table.appendChild(headerRow)
+  //----------------------
 
   //Skapa en ForEach loop
   data.forEach( (person) => {
