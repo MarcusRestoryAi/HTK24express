@@ -8,6 +8,5 @@
  *         description: Lyckad hämtning av användare
  */
 app.get('/users', (req, res) => {
-  //res.json([{ id: 1, name: 'Marcus' }]);
-  res.send(JSON.stringify([{ id: 1, name: 'Marcus' }]));
+  res.json([{ id: 1, name: 'Marcus' }]);
 });
