@@ -43,3 +43,13 @@ document.getElementById("btnFetch").addEventListener("click", async () => {
 
   document.getElementById("tabelOutput").appendChild(table)
 })
+
+/**
+ * Lägger ihop två tal.
+ * @param {number} a - Första talet
+ * @param {number} b - Andra talet
+ * @returns {number} Summan av talen
+ */
+function add(a, b) {
+  return a + b;
+}

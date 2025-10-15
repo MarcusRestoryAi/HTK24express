@@ -8,7 +8,7 @@
         "age": 36
     },
     {
-        "name": "Medieinstitutet",
+        "name": "Chas",
         "age": 40
     },
     {
@@ -26,5 +26,9 @@
     {
         "name": "Johan",
         "age": "22"
+    },
+    {
+        "name": "Oktober9",
+        "age": "9"
     }
 ]
